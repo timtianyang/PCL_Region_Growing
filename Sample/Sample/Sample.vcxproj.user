@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LocalDebuggerCommandArguments>-ofl -Xmax 600 -Ymax 600 -Zmax 2000 -Xmin -600 -Ymin -600 -Zmin  0.5 -M 2 -Rt -OutFormat 0 -FileName log.PCD -LeafSize 5 -MaxCluster 10000 -MinCluster 2000 -PointColorThr 1.5 -RegionColorThr 20 -DistanceThr 0.01  -SmThr 2.0 -CurThr 1.0</LocalDebuggerCommandArguments>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LocalDebuggerCommandArguments>-ofl -Xmax 600 -Ymax 600 -Zmax 2000 -Xmin -600 -Ymin -600 -Zmin  0.5 -M 2 -Rt -OutFormat 0 -FileName log.PCD -LeafSize 5 -MaxCluster 10000 -MinCluster 4000 -PointColorThr 7 -RegionColorThr 50  -DistanceThr 0.001  -SmThr 2.0 -CurThr 1.0</LocalDebuggerCommandArguments>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+  </PropertyGroup>
+</Project>
